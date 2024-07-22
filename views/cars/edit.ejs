@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/edit.css" />
+</head>
+<body>
+   
+    <form action="/cars/<%= car._id %>?_method=PUT" method="Post">
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="<%=car.name%>" >
+        </fieldset>
+        <fieldset>
+            <label for="price">Price</label>
+            <input type="text" name="price" id="price" value="<%=car.price%>">
+        </fieldset>
+        <button type="submit">Edit</button>
+        <a href="/cars">Back to the list</a>
+    </form>
+</body>
+</html>

@@ -9,7 +9,8 @@
 </head>
 <body>
     <h1><%=car.name%></h1>
-    <p><%=car.price%></p>
+    <p>Price : <%=car.price%></p>
+    <p>Insurance type : <%=car.insurance%></p>
 
 <form action="/cars/<%=car._id %>"method="Post">
     <button type="submit">Delete</button>
